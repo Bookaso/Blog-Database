@@ -13,7 +13,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 const app = express();
 
 app.set('view engine', 'ejs');
-mongoose.connect("mongodb+srv://admin-bookaso:Test123>@cluster0.3bzbf.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-bookaso:Test123@cluster0.3bzbf.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
